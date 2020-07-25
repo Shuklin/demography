@@ -1,0 +1,19 @@
+﻿﻿
+<div class="card m-3 home-container">
+  <h4 class="card-header">Slider</h4>
+
+  <div class="card-body">
+    <ngb-carousel *ngIf="slides.length">
+      <ng-template *ngFor="let slide of slides" ngbSlide>
+        <div class="picsum-img-wrapper">
+          <img class="home-carousel-img" [src]="slide.img" alt="Slide image">
+        </div>
+        <div class="carousel-caption">
+          <h3>{{slide.title}}</h3>
+          <p>{{slide.body}}</p>
+        </div>
+      </ng-template>
+    </ngb-carousel>
+
+  </div>
+</div>
